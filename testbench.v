@@ -5,7 +5,7 @@ module test_RandomCounter();
     wire [2:0] in;
     wire [2:0] count;
     RandomCounter dut1 (count, clk, clear, in);
-    controller dut2(in, clear, count, clk);
+    controller dut2(in, clear, count);
     
     always #5 clk=~clk;
     initial begin

@@ -1,6 +1,5 @@
 `timescale 1ns / 1ps
-module controller(in, clear, count, clk);
-    input clk;
+module controller(in, clear, count);
     input [2:0] count;
     output reg [2:0] in;
     output reg clear;
